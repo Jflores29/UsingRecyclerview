@@ -111,4 +111,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(movieAdapter);
     }
+
+    public void doVertical(View view) {
+        LinearLayoutManager verticalManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true);
+        recyclerView.setLayoutManager(verticalManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(movieAdapter);
+
+    }
 }
